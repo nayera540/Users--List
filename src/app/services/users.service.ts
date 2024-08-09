@@ -1,12 +1,15 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { User } from '../user';
-import { Observable } from 'rxjs';
+import { Observable, Subject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class UsersService {
+
+  private searchTermSource = new Subject<string>();
+  searchTerm$ = this.searchTermSource.asObservable();
 
   constructor(private httpClient: HttpClient) { }
 
@@ -18,10 +21,7 @@ export class UsersService {
     return this.httpClient.get<User>(`https://jsonplaceholder.typicode.com/users/${userId}`);
   }
 
-  filterUsers(searchText: string, users: User[]){
-    return users.filter((user) => {
-      user.username.toLowerCase().includes(searchText.toLowerCase()) ||
-      user.email.toLowerCase().includes(searchText.toLowerCase());
-    })
+  updateSearchTerm(term: string): void {
+    this.searchTermSource.next(term);
   }
 }
