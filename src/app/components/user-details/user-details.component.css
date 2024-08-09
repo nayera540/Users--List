@@ -1,0 +1,61 @@
+.user {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  margin: 16px 0;
+}
+
+.user__image img {
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.user__id,
+.user__name,
+.user__username,
+.user__email,
+.user__phone,
+.user__website,
+.user__address {
+  margin: 8px 0;
+  font-size: 1.3rem;
+  line-height: 1.5;
+}
+
+.user__id i,
+.user__name i,
+.user__username i,
+.user__email i,
+.user__phone i,
+.user__website i,
+.user__address i {
+  color: #555;
+  margin-right: 8px;
+}
+
+.user__website a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.user__website a:hover {
+  text-decoration: underline;
+}
+
+
+
+.user__address ul li {
+  margin: 4px 0;
+  font-size: 1.2rem;
+}
+
+.user__address ul li i {
+  color: #555;
+  margin-right: 8px;
+}
+
+ul{
+  list-style-type: none;
+}

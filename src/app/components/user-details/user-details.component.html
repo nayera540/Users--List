@@ -1,1 +1,20 @@
-<p>user-details works!</p>
+<div class="user row">
+  <div class="user__image col-md-4 col-sm-12 col-xs-12">
+    <img src="../../../assets/pngwing.com.png" alt="User Image">
+  </div>
+  <div class="col-md-8 col-sm-12 col-xs-12">
+    <p class="user__id"><i class="fa-solid fa-id-card"></i>ID: {{user.id}}</p>
+    <p class="user__name"><i class="fa-solid fa-signature"></i>Name: {{user.name}}</p>
+    <p class="user__username"><i class="fa-solid fa-user"></i>Username: {{user.username}}</p>
+    <p class="user__email"><i class="fa-solid fa-envelope"></i>Email: {{user.email}}</p>
+    <p class="user__phone"><i class="fa-solid fa-phone"></i>Phone: {{user.phone}}</p>
+    <p class="user__website"><i class="fa-brands fa-chrome"></i>Website: <a href="http://{{ user.website }}">{{user.website}}</a></p>
+    <p class="user__address">
+      <i class="fa-solid fa-map-location"></i> Address
+      <ul>
+        <li><i class="fa-solid fa-street-view"></i> Street: {{user.address.street}}</li>
+        <li><i class="fa-solid fa-city"></i> City: {{user.address.city}}</li>
+      </ul>
+    
+  </div>
+</div>
