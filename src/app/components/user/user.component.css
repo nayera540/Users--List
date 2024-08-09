@@ -1,0 +1,41 @@
+table {
+  width: 100%;
+
+}
+
+.users-table {
+  background-color: #fff;
+  box-shadow: 0 2rem 5rem #0000001a;
+}
+
+th {
+  color: #90949d;
+  font-size: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+td {
+  cursor: pointer;
+  color: #565d68;
+}
+
+tr:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transform: translateX(-4px);
+}
+
+
+a{
+  text-decoration: none;
+  color: #645fc6;
+}
+
+
+
+
+
+
+
+
+

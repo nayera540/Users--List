@@ -1,0 +1,32 @@
+nav{
+  background-color: #645fc6;
+  color: #fff;
+}
+
+
+.navbar-brand{
+  color: #fff;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.navbar-brand i{
+  margin-right: 8px;
+}
+
+.navbar-brand:hover{
+  cursor: pointer;
+}
+
+
+input {
+  box-sizing: border-box;
+  margin-left: 1rem;
+  padding: 0.75rem 1.25rem 0.75rem 2.2rem;
+  border: none;
+  background-image: url("data:image/svg+xml,%3Csvg width='20px' height='20px' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_15_152)'%3E%3Crect width='24' height='24' fill='white'/%3E%3Ccircle cx='10.5' cy='10.5' r='6.5' stroke='%23000000' stroke-linejoin='round'/%3E%3Cpath d='M19.6464 20.3536C19.8417 20.5488 20.1583 20.5488 20.3536 20.3536C20.5488 20.1583 20.5488 19.8417 20.3536 19.6464L19.6464 20.3536ZM20.3536 19.6464L15.3536 14.6464L14.6464 15.3536L19.6464 20.3536L20.3536 19.6464Z' fill='%23000000'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_15_152'%3E%3Crect width='24' height='24' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  max-width: 30rem;
+  border-radius: 5px;
+}
